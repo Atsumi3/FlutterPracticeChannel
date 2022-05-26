@@ -3,15 +3,15 @@ import Flutter
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
-    
+
     private var flutterViewController: FlutterViewController {
         // swiftlint:disable force_cast
-        return self.window.rootViewController as! FlutterViewController
+        self.window.rootViewController as! FlutterViewController
     }
-    
+
     override func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+            _ application: UIApplication,
+            didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         GeneratedPluginRegistrant.register(with: self)
         setupMethodChannels()

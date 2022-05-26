@@ -9,7 +9,7 @@ import jp.bizen.flutter.practice.channel.ui.textinput.TextInputActivity
 class PlatformTextInput private constructor(private val channel: MethodChannel) {
     companion object {
         lateinit var instance: PlatformTextInput
-        private const val TEXT_CHANNEL = "channel/text"
+        private const val TEXT_CHANNEL = "channel/textInput"
         private const val METHOD_LAUNCH_TEXT_SCREEN = "LaunchTextScreen"
         private const val METHOD_SEND_TEXT = "SendText"
 

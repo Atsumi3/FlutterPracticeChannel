@@ -1,6 +1,6 @@
-import 'package:flutter_channel_practice/model/platform/platform_text_input.dart';
-import 'package:riverpod/riverpod.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../model/platform/platform_text_input.dart';
 import 'text_input_page_state.dart';
 
 class TextInputPageController extends StateNotifier<TextInputPageState> {
