@@ -4,7 +4,9 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'text_input_page_controller_provider.dart';
 
 class TextInputPage extends StatelessWidget {
-  const TextInputPage({Key? key}) : super(key: key);
+  const TextInputPage({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +14,7 @@ class TextInputPage extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               _LaunchTextInputScreenWidget(),
               _TextWidget(),

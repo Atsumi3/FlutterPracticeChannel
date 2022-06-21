@@ -5,6 +5,6 @@ part 'text_input_page_state.freezed.dart';
 @freezed
 class TextInputPageState with _$TextInputPageState {
   const factory TextInputPageState({
-    required String text,
+    @Default("") String text,
   }) = _TextInputPageState;
 }

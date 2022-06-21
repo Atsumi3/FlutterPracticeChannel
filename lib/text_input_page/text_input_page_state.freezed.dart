@@ -90,9 +90,10 @@ class __$$_TextInputPageStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_TextInputPageState implements _TextInputPageState {
-  const _$_TextInputPageState({required this.text});
+  const _$_TextInputPageState({this.text = ""});
 
   @override
+  @JsonKey()
   final String text;
 
   @override
@@ -120,7 +121,7 @@ class _$_TextInputPageState implements _TextInputPageState {
 }
 
 abstract class _TextInputPageState implements TextInputPageState {
-  const factory _TextInputPageState({required final String text}) =
+  const factory _TextInputPageState({final String text}) =
       _$_TextInputPageState;
 
   @override
